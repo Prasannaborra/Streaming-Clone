@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #e50914;
+}
+
+.header h1 {
+  color: #e50914;
+}
+
+/* Section title */
+.section-title {
+  margin: 20px;
+  font-size: 22px;
+}
+
+
+/* ================= MOVIES GRID – SIDE BY SIDE FIX ================= */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 🔥 5 images pakapakana */
+  gap: 22px;
+  padding: 30px 30px 30px;
+}
+
+/* Movie Card */
+.movie-card {
+  text-decoration: none;
+  color: white;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* FIXED IMAGE SIZE (Pizza 3 issue solved here) */
+.movie-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Movie name */
+.movie-card span {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+@media (max-width: 1200px) {
+  .movies-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

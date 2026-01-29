@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MX Player Telugu</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="login.css">
+
+<style>
+/* login ayyaka movies chupinchadaniki */
+#moviesPage { display:none; }
+</style>
+</head>
+<body>
+<!-- ================= LOGIN PAGE ================= -->
+<div class="login-container" id="loginPage">
+  <h2>Sign In</h2>
+  <form onsubmit="loginUser(event)">
+    <input type="email" placeholder="Email or Phone" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Sign In</button>
+    <p class="signup-text">
+      New to MX Player? <a href="#">Sign up now</a>
+    </p>
+  </form>
+</div>
+
+<!-- ================= MOVIES PAGE (NEE CODE – NO CHANGE) ================= -->
+<div class="container" id="moviesPage">
+<header class="header">
+  <h1>MX Player – Telugu Movies</h1>
+</header>
+
+<h2 class="section-title">Trending Telugu Movies</h2>
+
+<div class="movies-grid">
+
+<a href="https://www.mxplayer.in/movie/watch-sita-ramam-movie-online-9c644f2c28410f9321fd9b572cf17e85?watch=true" target="_blank" class="movie-card">
+  <img src="sita ramam.jpg">
+  <span>Sita Ramam</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-ranga-maarthaanda-movie-online-318da3cae3b43319fc6572f5166e4a3b?watch=true" target="_blank" class="movie-card">
+  <img src="ranga maarthaanda.jpg">
+  <span>Ranga Maarthaanda</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-middle-class-melodies-movie-online-741cd1c39d099078ca6638e8517dddbf?watch=true" target="_blank" class="movie-card">
+  <img src="middle class melodies.jpg">
+  <span>Middle Class Melodies</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-jathi-ratnalu-movie-online-0c208bd14bf6a86b6e23cbb65c9e25f2?watch=true" target="_blank" class="movie-card">
+  <img src="jathiratnalli.jpg">
+  <span>Jathi Ratnalu</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-sarkaru-vaari-paata-movie-online-5867448be6db60b8569e94a27f4c5905?watch=true" target="_blank" class="movie-card">
+  <img src="Sarkaru Vaari Paata.jpg">
+  <span>Sarkaru Vaari Paata</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-vaarasudu-movie-online-bdc097c9e69456d31d767fa64dc41f28?watch=true" target="_blank" class="movie-card">
+  <img src="vaarasudu.jpg">
+  <span>Vaarasudu</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-yashoda-movie-online-ee11abfa4b4f1d525f265df35f413cee?watch=true" target="_blank" class="movie-card">
+  <img src="yasoda.jpg">
+  <span>Yashoda</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-paagal-movie-online-313e2e4ad07148b5da0d8aadab20f552?watch=true" target="_blank" class="movie-card">
+  <img src="paagal.jpg">
+  <span>Paagal</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-good-luck-sakhi-movie-online-054fe7009631fbf2fff344eb64ba8e33?watch=true" target="_blank" class="movie-card">
+  <img src="good luck sakhi.jpg">
+  <span>Good Luck Sakhi</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-v-telugu-movie-online-be32f5280f0d3a9d762856e0863dc390?watch=true" target="_blank" class="movie-card">
+  <img src="v.jpg">
+  <span>V (Telugu)</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-venky-mama-movie-online-4ba62f93bea3ccd2624d7d67128b5e07?watch=true" target="_blank" class="movie-card">
+  <img src="venky mama.jpg">
+  <span>Venky Mama</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-jackpot-telugu-movie-online-6a9224c36da43679ea696ffbf4197b6c?watch=true" target="_blank" class="movie-card">
+  <img src="jackpot.jpg">
+  <span>Jackpot (Telugu)</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-ravanasura-movie-online-a7d68c3dd551317c21d69dd8cd2c6591?watch=true" target="_blank" class="movie-card">
+  <img src="ravanasura.jpg">
+  <span>Ravanasura</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-pizza-3-movie-online-70ff51dc824fab7bd4a6a14c84935844?watch=true" target="_blank" class="movie-card">
+  <img src="pizza3.jpg">
+  <span>Pizza 3</span>
+</a>
+
+<a href="https://www.mxplayer.in/movie/watch-maara-movie-online-8db7b025f66d20c05e0ae57a60103cc4?watch=true" target="_blank" class="movie-card">
+  <img src="maara.jpg">
+  <span>Maara</span>
+</a>
+
+</div>
+</div>
+
+<!-- ================= JS (ONLY FOR SHOW / HIDE) ================= -->
+
+<script>
+function loginUser(e){
+  e.preventDefault();
+  document.getElementById("loginPage").style.display = "none";
+  document.getElementById("moviesPage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
